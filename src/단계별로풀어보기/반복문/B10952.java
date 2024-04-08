@@ -1,19 +1,27 @@
+package 단계별로풀어보기.반복문;
+
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class B15552 {
+public class B10952 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        int T = Integer.parseInt(br.readLine());
         StringTokenizer st;
 
-        for (int i = 0; i < T; i++) {
+        while (true) {
             st = new StringTokenizer(br.readLine(), " ");
-            int N = Integer.parseInt(st.nextToken());
-            int M = Integer.parseInt(st.nextToken());
-            bw.write((N + M) + "\n");
+            int i = Integer.parseInt(st.nextToken());
+            int j = Integer.parseInt(st.nextToken());
+            String sum = String.valueOf(i + j);
+
+            if (i == 0 && j == 0) {
+                break;
+            }
+
+            bw.write(sum + "\n");
+
         }
         br.close();
         bw.flush();

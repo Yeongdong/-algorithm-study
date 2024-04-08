@@ -1,3 +1,5 @@
+package 단계별로풀어보기.조건문;
+
 import java.util.Scanner;
 
 public class B1330 {

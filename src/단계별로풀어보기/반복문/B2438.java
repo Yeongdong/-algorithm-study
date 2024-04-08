@@ -1,3 +1,5 @@
+package 단계별로풀어보기.반복문;
+
 import java.util.Scanner;
 
 public class B2438 {
